@@ -1,0 +1,294 @@
+/*
+Theme Name: Wordpress
+
+*/
+html { margin: 0 !important; padding: 0 !important;}
+body{ min-height: 100%; font-family: "Open Sans", sans-serif; margin: 0; padding: 0; color:#000;}
+body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, footer, header, hgroup, menu, nav, section, summary, mark, audio, video{     border: 0; font-size: 100%; margin: 0; padding: 0;  vertical-align: baseline; }
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+}
+.page-wrapper { padding: 0; margin: 0; }
+.page-inner-wrapper { background-color: white;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;  min-height: 500px; }
+.navigation-area {background: #1e8cbe none repeat scroll 0 0; border: 1px solid #1e8cbe; height: 70px; left: 0px; position: fixed; width: 100%; z-index: 1;}
+.navigation-inner-area {max-width: 940px; margin: 0 auto; padding: 10px 0; }
+.logo {
+  margin-left: 0; display: inline-block;
+}
+.logo a{ background-image: url("images/logo.png"); background-repeat: no-repeat; background-size: 50px 50px; color: white; font-size: 25px; line-height: 50px; padding-left: 60px; text-decoration: none; display: inline-block; }
+.menunavigation {
+  float: right;
+}
+.menu-top-menu-container {
+  width: 100%;
+}
+
+#menu-top-menu {
+  margin: 0;
+  padding: 0;
+}
+
+ul#menu-top-menu li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+ul#menu-top-menu li a {
+  color: white;
+  font-size: 15px;
+  line-height: 50px;
+  padding: 0 10px;
+  text-decoration: none;
+}
+
+.page-footer-section{   
+   background-color: rgba(0, 0, 0, 0.8);
+  color: #e0e0e0;
+  float: left;
+  font-size: 15px;
+  width: 100%;
+}
+
+.page-footer-inner-area{ display: block;   margin: 0 auto;
+    width: 95%; }
+.footer-menu-area {
+  display: inline-block;
+  margin-left: 0;
+}
+
+.menu-footer-menu-container {
+  display: block;
+  width: 100%;
+}
+
+ul#menu-footer-menu {
+  margin: 0;
+  padding: 0;
+}
+
+ul#menu-footer-menu li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+ul#menu-footer-menu li a {
+  color: white;
+  line-height: 50px;
+  padding: 0 20px;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.footer-logo {
+  display: inline-block;
+  float: right;
+}
+
+.footer-logo > a {
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+  color: #fff;
+  line-height: 50px;
+  text-decoration: none;
+}
+
+.page-frontpage-sectionarea {
+  float: left;
+  padding: 120px 0;
+  width: 100%;
+}
+
+.page-frontpage-section-innerarea {
+  margin: 0 auto;
+  width: 940px;
+}
+
+.page-frontpage-section-leftarea {
+  float: left;
+  width: 50%;
+}
+
+.page-front-page-section-title {
+  font-size: 2em; padding:15px 0;
+}
+
+.page-front-page-content-section {
+  color: #888888;
+  line-height: 2em;
+  padding-right:20%;
+}
+.page-frontpage-section-rightarea{ width: 50%; float: left; }
+
+.page-frontpage-section-rightarea .page-front-page-image-section img {
+  height: auto;
+  padding: 10%;
+  width: 100%;
+}
+
+.page-content-section {
+  min-height: 520px;
+}
+
+.page-content-section .content-area {
+  margin: 0 auto;
+  padding: 100px 0;
+  width: 940px;
+}
+
+h1.page-title {
+  font-size: 2em;
+}
+
+.page-content-section .content-area .page-details {
+  line-height: 35px;
+}
+
+.page-front-page-image-section {
+  padding: 20px 0;
+}
+
+.page-image-details {
+  float: none;
+  padding: 25px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.page-frontpage-service-sectionarea {
+  background-color: #f9fbfc;
+border-top: 1px solid #f3f5f5;
+padding: 60px 30px;
+float: left;
+width: 100%;
+}
+
+.page-frontpage-service-section-innerarea {
+  margin: 0 auto;
+  width: 940px;
+}
+
+.page-frontpage-service-section {
+  float: left;
+    padding-right: 25px;
+    width: 45%;
+}
+
+.page-frontpage-service-section-rightarea {
+  float: left;
+  width: 36%;
+}
+
+.page-front-page-service-image-section {
+  float: left;
+}
+
+.page-front-page-service-image-section > img {
+  float: left;
+  text-align: center;
+}
+
+.page-frontpage-service-section-leftarea {
+  float: left;
+  width: 64%;
+}
+
+.page-front-page-service-content-section {
+  line-height: 30px;
+  padding-top: 25px;
+  width: 100%;
+}
+
+.qleft {
+  float: left;
+}
+.qhalf { width: 49%; } .qfull { width: 100%; }
+.qright{ float: right; }
+
+#post-9 form.wpcf7-form {
+  padding-left: 15%;
+  width: 80%;
+}
+
+.wpcf7-form-control.wpcf7-text, .wpcf7-submit {
+  font-size: 20px;
+  height: 40px;
+}
+
+.wpcf7-form-control..wpcf7-textarea{
+  font-size: 20px;
+}
+
+.wpcf7-form p{ padding-bottom: 25px; }
+.page-frontpage-call-action-section {
+  float: left;
+  padding: 40px 0 60px;
+  width: 100%;
+}
+
+.page-frontpage-call-action-inner-section {
+  margin: 0 auto;
+  width: 940px;
+}
+
+.page-frontpage-action-content-section {
+  width: 100%;
+}
+
+.front-call-section-link {
+  background-color: gray;
+  border-radius: 5px;
+  color: white;
+  float: right;
+  font-size: 25px;
+  padding: 20px;
+  text-decoration: none;
+  margin-right: 100px;
+}
+
+.page-frontpage-action-content-section h2{ font-size: 2em; }
+.page-frontpage-action-content-section p { line-height: 1.5em;  }
+
+.page-header-area {
+  background-color: white;
+  background-image: url("./images/banner-site.jpg");
+  background-position: center top;
+  background-size: cover;
+  color: white;
+  float: left;
+  height: 500px;
+  width: 100%;
+}
+
+.page-header-inner-area {
+  margin: 0 auto;
+  width: 940px;
+}
+
+.header-content-area {
+  box-sizing: border-box;
+  display: table-cell;
+  height: 500px;
+  vertical-align: middle;
+  width: 50%;
+  line-height: 40px;
+}
+
+.header-content-area > h1{  font-size: 2em; opacity: .9;  margin-top: calc(15%); }
+.header-content-area > p {
+  width: 50%;
+  margin: 32px 0 70px;
+  line-height: 30px;
+}
+
+.header-content-area > a {
+  background: #1e8cbe none repeat scroll 0 0;
+  border-radius: 5px;
+  color: white;
+  font-size: 25px;
+  padding: 20px;
+  text-decoration: none;
+}
