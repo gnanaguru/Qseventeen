@@ -6,7 +6,7 @@
       var tvalue = document.getElementById("otpValue").value;  
       var intPhonenumber = document.getElementById('frmphone').value;
       if(tvalue == ''){
-        alert('please enter otp');
+        jQuery('#verifiedstatus').html('please enter otp');
         return false
       }
 
@@ -21,7 +21,7 @@
         if(data == 'verified'){
           alert('verified');
         }else if(data == 'wrong otp'){
-          alert('wrong, please entre valid number');
+          jQuery('#verifiedstatus').html('Wrong OTP, please entre valid number');
           e.preventDefault();
         }
       })
@@ -58,12 +58,27 @@
 
       var intPhonenumber = document.getElementById('frmphone').value;
       //generate otp
+      //check for abuse
+      var abusewords = ['guru ','samy ','test ','ravi '];
+      var strdescription = document.getElementById('frmlastname').value;
+
+
+      jQuery(abusewords).each(function(key,value){
+        if(strdescription.indexOf(value) >=0){
+           jQuery('#verifiedstatus').html('Sorry, your review are not allow submit due to abuse word');
+           e.preventDefault();
+         }
+      });
+      
+
       jQuery.ajax({
           method: 'POST',
           url: 'http://l.w.qseventeen.com/otpTest.php',
           data:{ 'approach':'generate', 'intphonenumber': intPhonenumber} 
       }).done(function(data){
           jQuery('#otparea').slideDown(400);
+          var halfphonenumber = intPhonenumber.substring(7,10);
+          jQuery('#verifiedstatus').html('OTP has been sent to your mobile number: *******'+halfphonenumber);
       }).fail(function(data){
           alert('failure call');
       });
@@ -85,6 +100,7 @@ if(isset($_POST['Validate']) && $_POST['Validate'] == 'Verify'){
 ?>
 <div class="content-area" style="width: 50%; margin: 0 auto;">
 <h1 class="page-title">Q Form</h1>
+  <h4 id="verifiedstatus"></h4>
   <form id="otpverifyform" method="post" action="">
     <div class="otparea" id="otparea">
       <input type="text" id="otpValue" value="" placeholder="enter otp">

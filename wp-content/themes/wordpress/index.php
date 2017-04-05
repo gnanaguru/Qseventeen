@@ -21,7 +21,10 @@
 		?>
 
 		<?php 
+			get_template_part('template-parts/content','page-otp');
 		?>
+		
+
 		<div class="page-content-section">
 			<?php 
 				if(is_front_page()){
